@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sweat_zone *.css
+recursive-include sweat_zone *.csv
+recursive-include sweat_zone *.html
+recursive-include sweat_zone *.ico
+recursive-include sweat_zone *.js
+recursive-include sweat_zone *.json
+recursive-include sweat_zone *.md
+recursive-include sweat_zone *.png
+recursive-include sweat_zone *.py
+recursive-include sweat_zone *.svg
+recursive-include sweat_zone *.txt
+recursive-exclude sweat_zone *.pyc
