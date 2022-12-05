@@ -7,6 +7,25 @@ app_description = "Gym App"
 app_email = "kunhimohamed6@gmail.com"
 app_license = "MIT"
 
+# fixtures
+fixtures = [
+    {
+        "dt":
+        "Custom Field",
+        "filters": [[
+            "name", "in", [
+                # Customer
+                'Customer-to_date',
+                'Customer-from_date',
+                'Customer-section_break_76',
+                'Customer-subscription_plan',
+                'Customer-trainer',
+                'Customer-subscriptions'
+            ]
+        ]]
+    }
+] 
+
 # Includes in <head>
 # ------------------
 
