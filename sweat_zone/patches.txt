@@ -1,0 +1,6 @@
+
+
+[pre_model_sync]
+sweat_zone.patches.sweat_zone_app.set_pre_model_sync
+[post_model_sync]
+sweat_zone.patches.sweat_zone_app.set_gym_settings_default_values

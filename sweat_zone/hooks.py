@@ -9,21 +9,21 @@ app_license = "MIT"
 
 # fixtures
 fixtures = [
-    {
-        "dt":
-        "Custom Field",
-        "filters": [[
-            "name", "in", [
-                # Customer
-                'Customer-to_date',
-                'Customer-from_date',
-                'Customer-section_break_76',
-                'Customer-subscription_plan',
-                'Customer-trainer',
-                'Customer-subscriptions'
-            ]
-        ]]
-    }
+    # {
+    #     "dt":
+    #     "Custom Field",
+    #     "filters": [[
+    #         "name", "in", [
+    #             # Customer
+    #             'Customer-to_date',
+    #             'Customer-from_date',
+    #             'Customer-section_break_76',
+    #             'Customer-subscription_plan',
+    #             'Customer-trainer',
+    #             'Customer-subscriptions'
+    #         ]
+    #     ]]
+    # }
 ] 
 
 # Includes in <head>
@@ -131,6 +131,11 @@ doctype_js = {
 #		"on_trash": "method"
 #	}
 # }
+doc_events = {
+	"Customer": {
+		"on_update": "sweat_zone.events.customer.check_and_book_locker"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

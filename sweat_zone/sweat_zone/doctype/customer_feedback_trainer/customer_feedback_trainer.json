@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-06 19:02:43.929643",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer",
+  "rate",
+  "feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Feedback"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-06 19:04:16.116658",
+ "modified_by": "Administrator",
+ "module": "Sweat Zone",
+ "name": "Customer Feedback Trainer",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

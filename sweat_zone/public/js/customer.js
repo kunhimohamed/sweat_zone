@@ -1,13 +1,13 @@
 
 frappe.ui.form.on("Customer", {
 	setup: function (frm) {
-		frm.set_query("trainer", function (doc) {
+		frm.set_query("locker", function (doc) {
+			// let root_store_room = root_store_room
 			return {
-				query: 'sweat_zone.events.customer.fetch_specified_trainer',
-				filters: {
-					selected_plan: frm.doc.subscription_plan
-				}
+				query: "sweat_zone.events.customer.fetch_available_locker"
 			};
+
+			
 		});
 	},
 	subscription_plan: function(frm) {

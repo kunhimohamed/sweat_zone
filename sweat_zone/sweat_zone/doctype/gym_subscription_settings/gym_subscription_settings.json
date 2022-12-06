@@ -12,7 +12,8 @@
   "section_break_3",
   "cancel_at_end_of_period",
   "generate_invoice_at_beginning_of_period",
-  "submit_invoice_automatically"
+  "submit_invoice_automatically",
+  "root_store_room"
  ],
  "fields": [
   {
@@ -48,12 +49,18 @@
    "fieldname": "submit_invoice_automatically",
    "fieldtype": "Check",
    "label": " Submit Invoice Automatically"
+  },
+  {
+   "fieldname": "root_store_room",
+   "fieldtype": "Link",
+   "label": "Root Store Room",
+   "options": "Locker"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-12-06 15:55:40.641355",
+ "modified": "2022-12-06 17:54:25.367484",
  "modified_by": "Administrator",
  "module": "Sweat Zone",
  "name": "Gym Subscription Settings",
