@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-06 15:49:39.981356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "follow_calendar_months",
+  "generate_new_invoices_past_due_date",
+  "section_break_3",
+  "cancel_at_end_of_period",
+  "generate_invoice_at_beginning_of_period",
+  "submit_invoice_automatically"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "follow_calendar_months",
+   "fieldtype": "Check",
+   "label": "Follow Calendar Months"
+  },
+  {
+   "default": "0",
+   "fieldname": "generate_new_invoices_past_due_date",
+   "fieldtype": "Check",
+   "label": "Generate New Invoices Past Due Date"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancel_at_end_of_period",
+   "fieldtype": "Check",
+   "label": "Cancel At End Of Period"
+  },
+  {
+   "default": "0",
+   "fieldname": "generate_invoice_at_beginning_of_period",
+   "fieldtype": "Check",
+   "label": "Generate Invoice At Beginning Of Period"
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_invoice_automatically",
+   "fieldtype": "Check",
+   "label": " Submit Invoice Automatically"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-12-06 15:55:40.641355",
+ "modified_by": "Administrator",
+ "module": "Sweat Zone",
+ "name": "Gym Subscription Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
