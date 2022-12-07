@@ -2,40 +2,36 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:user",
- "creation": "2022-12-06 19:01:10.391754",
+ "creation": "2022-12-08 00:00:19.477634",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "user",
-  "rate_feedback_table"
+  "track_customer_fitness"
  ],
  "fields": [
   {
-   "fieldname": "rate_feedback_table",
-   "fieldtype": "Table",
-   "label": "Rate Feedback Table",
-   "options": "Customer Feedback Trainer"
-  },
-  {
-   "default": "frappe.session.user",
    "fieldname": "user",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "User",
    "options": "User",
-   "read_only": 1,
-   "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "track_customer_fitness",
+   "fieldtype": "Table",
+   "label": "Track Customer Fitness",
+   "options": "Track Customer Fitness"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-07 11:50:55.435460",
+ "modified": "2022-12-08 00:16:16.480987",
  "modified_by": "Administrator",
  "module": "Sweat Zone",
- "name": "Customer Feedback",
+ "name": "Customer Fitness Track",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

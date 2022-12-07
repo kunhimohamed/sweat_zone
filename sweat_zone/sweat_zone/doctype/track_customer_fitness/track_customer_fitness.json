@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "creation": "2022-12-08 00:14:24.560074",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "calories_intake",
+  "workout_hours",
+  "trainer"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "calories_intake",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Calories Intake"
+  },
+  {
+   "fieldname": "workout_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Workout Hours"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-08 00:14:24.560074",
+ "modified_by": "Administrator",
+ "module": "Sweat Zone",
+ "name": "Track Customer Fitness",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
