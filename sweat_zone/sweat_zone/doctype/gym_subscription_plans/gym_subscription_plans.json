@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:route",
+ "creation": "2022-12-08 16:39:55.782694",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subscription_plan",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Link",
+   "label": "Subscription Plan",
+   "options": "Subscription Plan",
+   "unique": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-12-08 16:49:32.295248",
+ "modified_by": "Administrator",
+ "module": "Sweat Zone",
+ "name": "Gym Subscription Plans",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "subscription_plans",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "route"
+}

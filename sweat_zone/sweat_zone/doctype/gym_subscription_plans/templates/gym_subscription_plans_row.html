@@ -1,0 +1,5 @@
+<div>
+	{% set rate = frappe.db.get_value("Subscription Plan", doc.subscription_plan, "cost") %}
+	<a href="{{ doc.route }}">{{ doc.title or doc.name }} {{rate}}</a>
+</div>
+<!-- this is a sample default list template -->

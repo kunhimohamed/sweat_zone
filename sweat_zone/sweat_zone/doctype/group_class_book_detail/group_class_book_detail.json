@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-08 18:40:24.222352",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "group_class",
+  "comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "group_class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Group Class",
+   "options": "Group Class"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Comment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-08 18:40:51.852299",
+ "modified_by": "Administrator",
+ "module": "Sweat Zone",
+ "name": "Group Class Book Detail",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
