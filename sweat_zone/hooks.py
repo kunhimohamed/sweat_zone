@@ -9,21 +9,27 @@ app_license = "MIT"
 
 # fixtures
 fixtures = [
-    # {
-    #     "dt":
-    #     "Custom Field",
-    #     "filters": [[
-    #         "name", "in", [
-    #             # Customer
-    #             'Customer-to_date',
-    #             'Customer-from_date',
-    #             'Customer-section_break_76',
-    #             'Customer-subscription_plan',
-    #             'Customer-trainer',
-    #             'Customer-subscriptions'
-    #         ]
-    #     ]]
-    # }
+    {
+        "dt":
+        "Custom Field",
+        "filters": [[
+            "name", "in", [
+                # Subscription plan detail
+                'Subscription Plan Detail-gym_trainer'
+            ]
+        ]]
+    },
+    {
+        "dt":
+        "Property Setter",
+        "filters": [[
+            "name", "in", [
+                # Subscription plan detail
+                'Subscription Plan Detail-qty-read_only',
+                'Subscription Plan Detail-qty-default'
+            ]
+        ]]
+    }
 ] 
 
 # Includes in <head>
