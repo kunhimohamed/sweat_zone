@@ -1,3 +1,14 @@
 <html>
-    <p>{{test}}</p>
+    {% if (array_length >= 1) %}
+        {%for d in test%}
+            <h3 class="card h-100 text-center">
+                <p>Selected Plan: {{d.plan}}</p>
+                <p>Start Date: {{d.start_date}}</p>
+                <p>End Date: {{d.end_date}}</p>
+                <p>Trainer: {{d.gym_trainer}}</p>
+            </h3>
+        {% endfor %}
+    {% else %}
+        <div class="text-center">No data</div>
+    {% endif %}
 </html>
