@@ -5,7 +5,12 @@
                 <p>Selected Plan: {{d.plan}}</p>
                 <p>Start Date: {{d.start_date}}</p>
                 <p>End Date: {{d.end_date}}</p>
+                {% if (d.active_plan==true) %}
+                    <p>Remaining Days: {{d.remaining_days}}</p>
+                {% endif %}
                 <p>Trainer: {{d.gym_trainer}}</p>
+                <p>Trainer Email: {{d.email}}</p>
+                <p>Trainer Phone: {{d.phone}}</p>        
             </h3>
         {% endfor %}
     {% else %}

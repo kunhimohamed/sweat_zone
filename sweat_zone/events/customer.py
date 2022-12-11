@@ -1,5 +1,6 @@
 
 import frappe
+from frappe.utils.data import today, date_diff
 
 @frappe.whitelist()
 @frappe.validate_and_sanitize_search_inputs
@@ -49,12 +50,24 @@ def fetch_customer_subscription_details(user=None):
 		if customer:
 			subscription_detail = frappe.db.sql("""
 					select 
-						ts.name, ts.start_date, ts.end_date, tspd.plan, tspd.gym_trainer  from tabSubscription ts 
+						ts.name, ts.start_date, ts.end_date, tspd.plan, tspd.gym_trainer, tgt.email, tgt.phone  
+					from 
+						tabSubscription ts 
 					join 
 						`tabSubscription Plan Detail` tspd on tspd.parent = ts.name
+					left join 
+						`tabGym Trainer` tgt on tgt.name = tspd.gym_trainer
 					where 
 						ts.party = "{customer}";
 			""".format(customer = customer), as_dict=1);
+			if subscription_detail:
+				for subscription_detail_row in subscription_detail:
+					if str(subscription_detail_row.start_date)<=today():
+						remaining_days = date_diff(subscription_detail_row.end_date, today())
+						subscription_detail_row["active_plan"] = True
+						subscription_detail_row["remaining_days"] = remaining_days
+					else:
+						subscription_detail_row["active_plan"] = False
 			return subscription_detail
 
 def party_exists_then_return(user):

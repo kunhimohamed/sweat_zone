@@ -28,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-08 00:16:16.480987",
+ "modified": "2022-12-11 21:35:26.489909",
  "modified_by": "Administrator",
  "module": "Sweat Zone",
  "name": "Customer Fitness Track",
@@ -44,6 +44,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
    "share": 1,
    "write": 1
   }

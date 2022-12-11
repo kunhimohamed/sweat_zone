@@ -16,6 +16,7 @@ init: function(wrapper) {
 make: function() {
    frappe.call('sweat_zone.events.customer.fetch_customer_subscription_details').then(r => {
       if (r.message){
+         console.log(r.message);
          $(frappe.render_template("customer_profile_pag", {"test":r.message, "array_length":r.message.length})).appendTo(this.page.main);
       }
       else{
