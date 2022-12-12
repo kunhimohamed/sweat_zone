@@ -26,7 +26,12 @@ fixtures = [
             "name", "in", [
                 # Subscription plan detail
                 'Subscription Plan Detail-qty-read_only',
-                'Subscription Plan Detail-qty-default'
+                'Subscription Plan Detail-qty-default',
+                # Subscription
+                'Subscription-generate_invoice_at_period_start-hidden',
+                'Subscription-cancel_at_period_end-hidden',
+                'Subscription-generate_new_invoices_past_due_date-hidden',
+                'Subscription-follow_calendar_months-hidden'
             ]
         ]]
     }
@@ -56,7 +61,8 @@ fixtures = [
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
-        "Customer" : "public/js/customer.js"
+        "Customer" : "public/js/customer.js",
+        "Subscription" : "public/js/subscription.js"
     }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
