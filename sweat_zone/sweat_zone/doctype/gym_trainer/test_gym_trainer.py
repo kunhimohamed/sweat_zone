@@ -35,5 +35,5 @@ def create_gym_trainer():
 
 
 class TestGymTrainer(FrappeTestCase):
-	def setUp(self):
+	def test_setUp(self):
 		create_gym_trainer()

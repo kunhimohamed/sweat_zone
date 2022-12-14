@@ -24,5 +24,5 @@ def create_group_class():
 	frappe.flags.test_events_created = True
 
 class TestGroupClass(FrappeTestCase):
-	def setUp(self):
+	def test_setUp(self):
 		create_group_class()
