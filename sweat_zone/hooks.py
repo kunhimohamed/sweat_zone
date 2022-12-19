@@ -172,6 +172,12 @@ doc_events = {
 #	],
 # }
 
+scheduler_events = {
+	"weekly": [
+		"sweat_zone.events.group_class_details_weekly.fetch_customer_group_class_booking_details"
+	]
+}
+
 # Testing
 # -------
 
